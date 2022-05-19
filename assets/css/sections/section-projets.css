@@ -1,0 +1,227 @@
+.biographie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    background-color: var(--light);
+}
+
+.biographie-container {
+    /* width: 100%;
+    height: 100vh; */
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    width: 100%;
+    height: 80vh;
+    padding: 40px;
+}
+
+.left {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(/assets/images/background-home.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.right {
+    display: flex;
+    /* flex-flow: column; */
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    .row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.big-letter {
+    float: left;
+    font-size: 60px;
+}
+
+.row p {
+    text-align: justify;
+    margin-top: 20px;
+    color: #606060;
+}
+
+/* .right-button {
+    display: inline-block;
+    position: relative;
+    color: var(--dark);
+    padding: 15px;
+    margin-top: 40px;
+    transition: all .2s ease-in-out;
+    border: 2px var(--dark) solid;
+    border-radius: 20px;
+}
+
+.right-button:hover {
+    color: var(--light);
+    background-color: var(--dark);
+} */
+
+.button {
+  --background: #2B3044;
+  --text: #fff;
+  --icon: #fff;
+  --icon-success: #16BF78;
+  display: flex;
+  outline: none;
+  border: 0;
+  padding: 0 22px 0 16px;
+  min-width: 147px;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 20px;
+  background: var(--background);
+  transition: transform 0.2s;
+}
+.button:active {
+  transform: scale(0.95);
+}
+.button ul {
+  margin: 0;
+  padding: 13px 0;
+  list-style: none;
+  text-align: center;
+  position: relative;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  color: var(--text);
+}
+
+.button ul li {
+  color: var(--light);
+}
+
+.button ul li:not(:first-child) {
+  top: var(--t, 13px);
+  left: 0;
+  position: absolute;
+}
+.button ul li:nth-child(2) {
+  --t: 64px;
+}
+.button ul li:nth-child(3) {
+  --t: 115px;
+}
+.button .icon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 14px 10px 0 0;
+  transform: translateY(calc(var(--y, 0) * 1px));
+}
+.button .icon svg {
+  width: var(--w, 14px);
+  height: var(--h, 15px);
+  display: block;
+  fill: none;
+  stroke: var(--s, var(--icon));
+  stroke-width: var(--sw, 2);
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.button .icon > svg,
+.button .icon div {
+  left: var(--l, 7px);
+  top: var(--t, 2px);
+  position: absolute;
+}
+.button .icon > svg {
+  transform: translateY(calc(var(--y, 0) * 1px));
+}
+.button .icon > svg polyline,
+.button .icon > svg line {
+  stroke-dasharray: var(--a, 12px);
+  stroke-dashoffset: var(--o, 0);
+  stroke: var(--s, var(--icon));
+  transition: stroke-dashoffset var(--d, 0.15s), stroke 0.4s;
+}
+.button .icon > svg polyline {
+  --d: .25s;
+  --a: 17px;
+  --o: 5.5px;
+}
+.button .icon div {
+  --w: 24px;
+  --h: 24px;
+  --l: 0;
+  --t: 8px;
+  --sw: 1.5;
+}
+.button.loading ul {
+  -webkit-animation: text 1750ms linear forwards 100ms;
+          animation: text 1750ms linear forwards 100ms;
+}
+.button.loading.complete .icon svg line {
+  --o: 12px;
+}
+.button.loading.complete .icon svg polyline {
+  --o: 0;
+  --s: var(--icon-success);
+}
+
+@-webkit-keyframes text {
+  18%, 82% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(-200%);
+  }
+}
+
+@keyframes text {
+  18%, 82% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(-200%);
+  }
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  font-family: "Roboto", Arial;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #F6F8FF;
+}
+body .dribbble {
+  position: fixed;
+  display: block;
+  right: 20px;
+  bottom: 20px;
+}
+body .dribbble img {
+  display: block;
+  height: 28px;
+}
+body .twitter {
+  position: fixed;
+  display: block;
+  right: 64px;
+  bottom: 14px;
+}
+body .twitter svg {
+  width: 32px;
+  height: 32px;
+  fill: #1da1f2;
+}

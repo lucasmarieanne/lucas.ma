@@ -1,0 +1,76 @@
+.home {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(/assets/images/background.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 0 5%;
+}
+
+.home-text-content {
+    text-align: center;
+}
+
+.home-text-content h1 {
+    font-size: 200px;
+    font-family: var(--title);
+    color: var(--light);
+}
+.home-text-content h2 {
+    font-family: var(--title);
+    margin-top: -40px;
+    font-size: 60px;
+    color: var(--light);
+}
+
+.home-text-content a {
+    display: inline-block;
+    margin-top: 40px;
+    color: var(--dark);
+    background-color: var(--light);
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.home-text-content a:hover {
+    background-color: rgb(211, 211, 211);
+}
+
+.socials {
+    position: absolute;
+    right: 70px;
+    bottom: 30px;
+    padding: 0 1%;
+}
+
+.socials-list {
+    display: flex;
+}
+
+.socials-list li {
+    padding: 0 20px;
+}
+
+.socials-list li i {
+    font-size: 20px;
+    color: var(--red);
+    transition: all .2s ease-in-out;
+}
+
+.socials-list li i:hover {
+    transform: scale(1.15);
+    color: var(--red);
+}
