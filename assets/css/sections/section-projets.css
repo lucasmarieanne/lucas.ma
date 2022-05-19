@@ -24,7 +24,7 @@
 .left {
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(/assets/images/background-home.JPG);
+    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(./background-home.JPG);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
