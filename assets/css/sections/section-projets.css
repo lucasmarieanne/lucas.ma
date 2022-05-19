@@ -56,7 +56,9 @@
     width: 190px;
     height: 190px;
     background-repeat: no-repeat;
-    background-image: url(/assets/images/code.svg);
+    background-image: url(/images/marner.png);
+    background-position: center;
+    background-size: cover;
     margin-bottom: 20px;
 }
 
@@ -158,8 +160,8 @@
 }
 
 .bottom-text {
-    border: 2px rgb(121, 0, 0) solid;
-    color: rgb(121, 0, 0);
+    border: 2px #464e6e solid;
+    color: #464e6e;
     font-weight: 900;
     padding: 15px;
     border-radius: 50px;
@@ -169,6 +171,10 @@
 
 .card-bottom-text a:hover {
     color: var(--light);
-    background-color: rgb(121, 0, 0);
-    padding: 20px 25px;
+    background-color: #464e6e;
+    /* padding: 20px 25px; */
+}
+
+.card-bottom-text i {
+    color: #d3b700;
 }
