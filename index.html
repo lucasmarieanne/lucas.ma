@@ -18,11 +18,13 @@
     <!-- Links css sections -->
 
     <link rel="stylesheet" href="assets/css/sections/section-home.css">
+    <link rel="stylesheet" href="assets/css/sections/section-biographies.css">
     <link rel="stylesheet" href="assets/css/sections/section-projets.css">
 
     <!-- Link icons -->
 
     <script src="https://kit.fontawesome.com/1825bd9b94.js"crossorigin="anonymous:"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
 </head>
 <body>
 
@@ -37,8 +39,8 @@
                 <nav>
                     <ul class="nav-list">
                         <li><a href="index.html" class="nav-active">Home</a></li>
-                        <li><a href="#">Biographie</a></li>
-                        <li><a href="projets.html">Projets</a></li>
+                        <li><a href="#biographie">Biographie</a></li>
+                        <li><a href="#projets">Projets</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
@@ -46,30 +48,6 @@
             </div>
 
         </header>
-
-        <!-- <nav>
-
-            <a href="#" class="nav-icon" aria-label="visit homepage" aria-current="page">
-                <img src="./assets/svg/logo2.svg" alt="icon">
-                <span>LMA</span>
-            </a>
-
-            <div class="main-navlinks">
-
-                <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-
-                <div class="navlinks-container">
-                    <a href="#" aria-current="page">Home</a>
-                    <a href="#">Projets</a>
-                    <a href="#">Biographie</a>
-                    <a href="#">Contact</a>
-                </div>
-
-            </div> -->
 
         </nav>
 
@@ -109,31 +87,13 @@
 
                     <div class="right-content">
                         <p><span class="big-letter">S</span>alut moi c'est Lucas Marie-Anne, j’ai 18 ans, j’ai actuellement 1 an d’expérience dans le développement du web.</p>
-                        <p>Je connais déjà bien les fondamentaux HTML et CSS, ce qui m’a permis de concevoir et de développer mon portfolio avec plusieurs réalisations, comme un site e-commerce et plusieurs Landing Pages.</p>
-                        <p class="text-end">Je suis très passionné par l’informatique, et plus particulièrement par le développement web, j’ai alors décidé de suivre une formation de développeur web en alternance avec OpenClassrooms.</p>
+                        <p>Je connais déjà bien les fondamentaux HTML et CSS, ce qui m’a permis de concevoir et de développer mon portfolio avec plusieurs réalisations, comme un site e-commerce et pleins d'autres projets.</p>
+                        <p class="text-end">Je suis très passionné par l’informatique, et plus particulièrement par le développement du web.</p>
+                        <p>J’ai alors décidé de suivre une formation de développeur web en alternance avec <a href="https://openclassrooms.com/fr/" target="_blank" class="links">OpenClassrooms</a>, car elle représente pour moi le moyen le plus efficace de mettre au profit de l’entreprise mes connaissances théoriques en programmation et d’avoir un premier pas dans le monde du travail.</p>
+                        <p>Cette formation me premettra d'améliorer mes compétences dans la programmation informatique et d'y obtenir un <a href="https://www.francecompetences.fr/recherche/rncp/36076/" target="_blank" class="links">diplôme RNCP de niveau 5 (Bac + 2)</a>.</p>
                         
-                        <!-- <a href="./assets/images/cv.pdf" class="right-button" target="_blank" download="CV Lucas MARIE-ANNE">
-                            CV <i class="fa-solid fa-download"></i>
-                        </a> -->
-
-                        <a href="#" download="cv">
-                            <button class="button">
-                                <div class="icon">
-                                    <svg viewBox="0 0 14 15">
-                                        <line x1="5" y1="13" x2="5" y2="1"></line>
-                                        <polyline id="tick" points="1 9.5 5 13.5 13 5.5"></polyline>
-                                        <polyline id="normal" points="1 9.5 5 13.5 9 9.5"></polyline>
-                                    </svg>
-                                    <div>
-                                        <svg viewBox="0 0 24 24"></svg>
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li>Télécharger</li>
-                                    <li>Waiting</li>
-                                    <li>Open file</li>
-                                </ul>
-                            </button>
+                        <a href="./images/CV_Lucas_Marie-Anne-Développeur web.pdf" class="bio-button" download="CV Lucas MARIE-ANNE">
+                            Télécharger CV 
                         </a>
 
                     </div>
@@ -142,6 +102,70 @@
 
             </div>
 
+        </div>
+
+    </section>
+
+    <section class="services">
+
+        <div class="card-container">
+            <div class="center">
+                <h1>Mes projets</h1>
+                <p class="card-title-text">Voici tout nos services de qualités que nous vous proposons.</p>
+            </div>
+    
+            <div class="cards">
+                
+                <div class="card">
+                    <div class="image-1"></div>
+                    <h3 class="card-name">Développement</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero maiores, corporis tempora ipsum est ea nam accusantium expedita, neque dolorem vitae ex repudiandae corrupti sed rem nobis quae aliquid illo.</p>
+                    <a href="" class="card-button">En savoir plus</a>
+                </div>
+    
+                <div class="card">
+                    <div class="image-2"></div>
+                    <h3 class="card-name">SEO</h3>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat ut sed saepe ducimus quam et hic sunt officia, incidunt obcaecati, nemo aperiam eaque in neque adipisci qui, totam nam illo!</p>
+                    <a href="" class="card-button">En savoir plus</a>
+                </div>
+    
+                <div class="card">
+                    <div class="image-3"></div>
+                    <h3 class="card-name">Refonte</h3>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam atque, hic corrupti quidem voluptate numquam sit saepe officiis labore ducimus nam placeat quaerat et. Tempore consectetur culpa ipsa officia eius?</p>
+                    <a href="" class="card-button">En savoir plus</a>
+                </div>
+
+                <div class="card">
+                    <div class="image-4"></div>
+                    <h3 class="card-name">Réseaux sociaux</h3>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam atque, hic corrupti quidem voluptate numquam sit saepe officiis labore ducimus nam placeat quaerat et. Tempore consectetur culpa ipsa officia eius?</p>
+                    <a href="" class="card-button">En savoir plus</a>
+                </div>
+
+                <div class="card">
+                    <div class="image-5"></div>
+                    <h3 class="card-name">Refonte</h3>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam atque, hic corrupti quidem voluptate numquam sit saepe officiis labore ducimus nam placeat quaerat et. Tempore consectetur culpa ipsa officia eius?</p>
+                    <a href="" class="card-button">En savoir plus</a>
+                </div>
+
+                <div class="card">
+                    <div class="image-6"></div>
+                    <h3 class="card-name">Refonte</h3>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam atque, hic corrupti quidem voluptate numquam sit saepe officiis labore ducimus nam placeat quaerat et. Tempore consectetur culpa ipsa officia eius?</p>
+                    <a href="" class="card-button">En savoir plus</a>
+                </div>
+    
+            </div>
+
+            <div class="card-button-bottom">
+                <div class="card-bottom-text">
+                    <a href="#" class="bottom-text">Découvrez tous nos projets</a>
+                </div>
+            </div>
+            
         </div>
 
     </section>
