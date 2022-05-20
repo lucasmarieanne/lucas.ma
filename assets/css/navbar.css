@@ -5,11 +5,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--light);
-    box-shadow: inset 0px -1px 0px var(--dark);
     z-index: 1000;
+    transition: all 400ms ease-in-out;
 }
-
 
 header .header-container {
     width: 100%;
@@ -23,6 +21,7 @@ header .header-container {
 .logo {
     font-size: 50px;
     font-style: italic;
+    color: var(--light);
     font-family: 'Caveat', cursive;
 }
 
@@ -34,7 +33,7 @@ header .header-container {
 .nav-list li a {
     position: relative;
     display: inline-block;
-    color: var(--dark);
+    color: var(--light);
     display: inline-block;
     font-weight: 300;
     font-size: 15px;
@@ -50,7 +49,7 @@ header .header-container {
     height: 1px;
     transform: scaleX(0);
     transform-origin: left;
-    background-color: var(--dark);
+    background-color: var(--light);
     transition: transform .2s ease-in-out;
 }
 
@@ -60,4 +59,14 @@ header .header-container {
 
 .nav-list .nav-active {
     opacity: .5;
+}
+
+.scrolling-active {
+    background-color: rgba(0, 0, 0, .7);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.nav-mobile {
+    display: none;
 }
