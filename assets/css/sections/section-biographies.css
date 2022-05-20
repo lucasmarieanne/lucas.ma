@@ -24,8 +24,7 @@
 .left {
   height: 100%;
   width: 100%;
-  border-radius: 20px;
-  background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(./background-home.JPG);
+  background-image: linear-gradient(rgba(165, 115, 0, 0.4), rgba(0,0,0,.4)), url(./background-home.JPG);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -52,6 +51,7 @@
 }
 
 .right-content p {
+  font-weight: 300;
   text-align: justify;
   padding-bottom: 20px;
 }
@@ -62,16 +62,19 @@
 }
 
 .bio-button {
-  display: inline-block;
+  /* display: flex; */
+  display: inline-flex;
   position: relative;
   text-align: center;
+  align-items: center;
   position: relative;
   color: var(--light);
-  padding: 15px;
+  background-color: var(--light);
   margin-top: 40px;
-  transition: all .2s ease-in-out;
+  padding: 15px 40px;
+  font-weight: 300;
+  transition: all 400ms;
   background-color: #464e6e;
-  border-radius: 10px;
 }
 
 .bio-button:hover {
@@ -83,4 +86,9 @@
 .bio-button:active {
   /* background-color: #a0b4fe; */
   transform: scale(0.95);
+}
+
+.bio-button img {
+  height: 30px;
+  color: white;
 }
