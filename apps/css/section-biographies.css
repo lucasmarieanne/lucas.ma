@@ -1,9 +1,9 @@
 .biographie {
-  /* display: flex; */
   justify-content: center;
   align-items: center;
   width: 100%;
   background-color: var(--light);
+  padding: 0 5%;
 }
 
 .biographie-container {
@@ -18,7 +18,7 @@
 }
 
 .bio-center h1 {
-  font-size: 80px;
+  font-size: 50px;
   margin-bottom: 20px;
   font-style: italic;
   font-weight: 400;
@@ -27,12 +27,12 @@
 
 .row {
   display: flex;
-  /* display: grid; */
-  /* grid-template-columns: repeat(2, 1fr); */
-  /* grid-gap: 40px; */
   width: 100%;
   height: 100%;
-  padding: 40px;
+  padding: 20px 30px;
+  padding-top: 60px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .right {
@@ -56,10 +56,16 @@
   font-size: 60px;
 }
 
-.right-content p {
-  font-weight: 300;
+.right-content {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
   text-align: justify;
-  padding-bottom: 20px;
+}
+.right-content p {
+  font-size: 19px;
+  text-align: justify;
+  padding-bottom: 30px;
 }
 
 .right-content .links {
@@ -68,19 +74,16 @@
 }
 
 .bio-button {
-  /* display: flex; */
-  display: inline-flex;
+  display: inline-block;
   position: relative;
   text-align: center;
   align-items: center;
-  position: relative;
   color: var(--light);
-  background-color: var(--light);
   margin-top: 40px;
   padding: 15px 40px;
-  font-weight: 300;
   transition: all 400ms;
   background-color: var(--dark);
+  padding-bottom: 60px;
 }
 
 .bio-button:hover {

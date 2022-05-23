@@ -11,9 +11,6 @@
         width: 100%;
         z-index: 1000;
         transition: all 400ms ease-in-out;
-        background-color: rgba(0, 0, 0, 0.8);
-        -webkit-backdrop-filter: saturate(180%) blur(20px);
-        backdrop-filter: saturate(180%) blur(20px);
     }
     
     header .header-container {

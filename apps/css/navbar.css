@@ -1,13 +1,13 @@
 header {
-    height: 60px;
+    height: 70px;
     position: fixed;
     width: 100%;
     z-index: 1000;
-    transition: all 400ms ease-in-out;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    transition: all 400ms ease-in-out;
 }
 
 header .header-container {
@@ -23,7 +23,8 @@ header .header-container {
     font-size: 30px;
     font-style: italic;
     color: var(--light);
-    font-family: 'Caveat', cursive;
+    font-family: 'Gill Sans', cursive;
+    transition: all 400ms ease-in-out;
 }
 
 .nav-list li {
@@ -36,9 +37,9 @@ header .header-container {
     display: inline-block;
     color: var(--light);
     display: inline-block;
-    font-weight: 300;
-    font-size: 16px;
-    transition: all .2s ease-in-out;
+    font-size: 17px;
+    transition: all 400ms ease-in-out;
+
 }
 
 .nav-list a::after {
@@ -63,7 +64,20 @@ header .header-container {
 }
 
 .scrolling-active {
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(255, 255, 255, 0.8);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
+    box-shadow: 0px -1px 0px rgb(207, 207, 207) inset;
+}
+
+.scrolling-active .nav-list li a {
+    color: var(--dark);
+}
+
+.scrolling-active .logo {
+    color: var(--dark);
+}
+
+.scrolling-active .nav-list a::after {
+    background-color: var(--dark);
 }
