@@ -22,7 +22,6 @@
   margin-bottom: 20px;
   font-style: italic;
   font-weight: 400;
-  /* font-family: 'Montez', sans-serif; */
 }
 
 .row {
@@ -34,20 +33,6 @@
   max-width: 1000px;
   margin: 0 auto;
 }
-
-.right {
-  /* padding: 40px; */
-  /* display: flex; */
-  /* flex-flow: column; */
-  align-items: center;
-  text-align: center;
-}
-
-/* @media screen and (max-width: 850px) {
-  .row {
-    grid-template-columns: repeat(1, 1fr);
-  } 
-} */
 
 .big-letter {
   line-height: 50px;
@@ -77,21 +62,27 @@
   display: inline-block;
   position: relative;
   text-align: center;
-  align-items: center;
   color: var(--light);
   margin-top: 40px;
+  margin-bottom: 60px;
   padding: 15px 40px;
   transition: all 400ms;
   background-color: var(--dark);
-  padding-bottom: 60px;
 }
 
 .bio-button:hover {
-  color: var(--light);
-  background-color: #2B3044;
-  transform: scale(1.03);
+  background-color: rgba(41, 41, 41, 0.9);
 }
 
 .bio-button:active {
   transform: scale(0.95);
+}
+
+.test {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../images/background-bio.JPG);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

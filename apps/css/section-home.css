@@ -17,9 +17,6 @@
     padding-bottom: 50px;
 }
 
-.home-text-content {
-}
-
 .home-text-content h1 {
     font-size: 50px;
     text-transform: uppercase;
@@ -62,13 +59,13 @@
 
 .socials-list li i {
     font-size: 20px;
-    color: var(--red);
+    color: var(--light);
     transition: all .2s ease-in-out;
 }
 
 .socials-list li i:hover {
     transform: scale(1.15);
-    color: var(--red);
+    color: var(--light);
 }
 
 @media screen and (max-width: 850px) { 
@@ -81,6 +78,24 @@
         width: 100%;
         padding-bottom: 50px;
     }
+
+    .socials {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        padding: 0 1%;
+    }
+
+    .socials-list {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .socials-list li {
+        padding: 20px 0;
+    }
+
+
 }
 
 @media screen and (max-width: 350px) { 
