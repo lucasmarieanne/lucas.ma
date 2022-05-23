@@ -180,3 +180,12 @@
 .card-bottom-text i {
     color: #d3b700;
 }
+
+.html {
+    text-align: center;
+    height: 100vh;
+}
+
+.html img {
+    height: 400px;
+}

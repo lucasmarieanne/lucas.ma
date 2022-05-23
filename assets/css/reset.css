@@ -13,6 +13,7 @@ html {
 
 body {
     background-color: var(--light);
+    /* background-color: red; */
 }
 
 ul,li {

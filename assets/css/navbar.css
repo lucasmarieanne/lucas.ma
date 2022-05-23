@@ -1,12 +1,13 @@
 header {
-    padding: 5px;
+    height: 60px;
     position: fixed;
     width: 100%;
+    z-index: 1000;
+    transition: all 400ms ease-in-out;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000;
-    transition: all 400ms ease-in-out;
+    text-align: center;
 }
 
 header .header-container {
@@ -15,11 +16,11 @@ header .header-container {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 0 3%;
+    padding: 0 4%;
 }
 
 .logo {
-    font-size: 50px;
+    font-size: 30px;
     font-style: italic;
     color: var(--light);
     font-family: 'Caveat', cursive;
@@ -36,7 +37,7 @@ header .header-container {
     color: var(--light);
     display: inline-block;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 16px;
     transition: all .2s ease-in-out;
 }
 
@@ -62,11 +63,7 @@ header .header-container {
 }
 
 .scrolling-active {
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, .8);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
-}
-
-.nav-mobile {
-    display: none;
 }

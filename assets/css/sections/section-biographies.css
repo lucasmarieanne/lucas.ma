@@ -1,47 +1,53 @@
 .biographie {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
-  height: 80vh;
   width: 100%;
   background-color: var(--light);
 }
 
 .biographie-container {
-    /* width: 100%;
-    height: 100vh; */
+  padding: 20px 30px;
+  padding-top: 60px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.biographie-container .bio-center {
+  text-align: center;
+}
+
+.bio-center h1 {
+  font-size: 80px;
+  margin-bottom: 20px;
+  font-style: italic;
+  font-weight: 400;
+  /* font-family: 'Montez', sans-serif; */
 }
 
 .row {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 40px;
+  display: flex;
+  /* display: grid; */
+  /* grid-template-columns: repeat(2, 1fr); */
+  /* grid-gap: 40px; */
   width: 100%;
-  height: 80vh;
+  height: 100%;
   padding: 40px;
 }
 
-.left {
-  height: 100%;
-  width: 100%;
-  background-image: linear-gradient(rgba(165, 115, 0, 0.4), rgba(0,0,0,.4)), url(./background-home.JPG);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .right {
-  display: flex;
+  /* padding: 40px; */
+  /* display: flex; */
   /* flex-flow: column; */
   align-items: center;
   text-align: center;
 }
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 850px) {
   .row {
     grid-template-columns: repeat(1, 1fr);
-}
-}
+  } 
+} */
 
 .big-letter {
   line-height: 50px;
@@ -74,7 +80,7 @@
   padding: 15px 40px;
   font-weight: 300;
   transition: all 400ms;
-  background-color: #464e6e;
+  background-color: var(--dark);
 }
 
 .bio-button:hover {
@@ -84,11 +90,5 @@
 }
 
 .bio-button:active {
-  /* background-color: #a0b4fe; */
   transform: scale(0.95);
-}
-
-.bio-button img {
-  height: 30px;
-  color: white;
 }
