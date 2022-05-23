@@ -23,7 +23,6 @@ header .header-container {
     font-size: 30px;
     font-style: italic;
     color: var(--light);
-    font-family: 'Gill Sans', cursive;
     transition: all 400ms ease-in-out;
 }
 
