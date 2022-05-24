@@ -18,8 +18,8 @@
 }
 
 .bio-center h1 {
-  font-size: 50px;
-  font-weight: 400;
+  font-size: 80px;
+  font-weight: 600;
 }
 
 .row {
@@ -78,11 +78,23 @@
   transform: scale(0.95);
 }
 
-.test {
-  height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../images/background-bio.JPG);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+@media screen and (max-width: 850px) {
+
+  .bio-center h1 {
+    font-size: 50px;
+    font-weight: 500;
+  }
+
+  .bio-button {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: var(--light);
+    font-size: 14px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    padding: 15px 40px;
+    transition: all 400ms;
+    background-color: var(--dark);
+  }
 }
