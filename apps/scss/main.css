@@ -1,0 +1,97 @@
+.projets {
+  width: 100%;
+  background-color: var(--light);
+}
+
+.projets .title {
+  text-align: center;
+  margin-top: 100px;
+  padding: 0 3%;
+}
+
+.projets .title h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.projets .cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 50px 5%;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.projets .case-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: start;
+  width: 100%;
+  height: 65vh;
+}
+
+.projets .case-1 .imgbox-1 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/shoppeur.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.projets .case-1 h1 {
+  font-style: italic;
+  padding-top: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.projets .case-1 .text-1 {
+  color: black;
+  padding-top: 5px;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+.projets .case-1 .text-2 {
+  color: #0062ff;
+  padding-top: 5px;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
+.projets .case-1 a {
+  display: inline-block;
+  font-size: 16px;
+  border-bottom: 1px black solid;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 850px) {
+  .projets .cards {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+/*# sourceMappingURL=main.css.map */

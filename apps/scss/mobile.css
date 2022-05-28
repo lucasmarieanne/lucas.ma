@@ -1,0 +1,72 @@
+/* Navbar */
+@media screen and (max-width: 850px) {
+  .logo {
+    display: none;
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    -webkit-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+  }
+  header .header-container {
+    height: 50px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 0 3%;
+  }
+  .subheader {
+    position: absolute;
+    top: 50px;
+    height: 40px;
+    width: 100%;
+    -webkit-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+  }
+  .subheader .container {
+    height: 50px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: white;
+    -webkit-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+  }
+  .subheader .container .list li {
+    display: inline-block;
+    padding: 0 20px;
+  }
+  .subheader .container .list li a {
+    color: black;
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nav-list li {
+    display: inline-block;
+    padding: 0 10px;
+  }
+  .nav-list li a {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */

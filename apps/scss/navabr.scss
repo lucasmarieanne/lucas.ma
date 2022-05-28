@@ -1,0 +1,117 @@
+header {
+    position: fixed;
+    width: 100%;
+    padding: 0 5%;
+    z-index: 1000;
+    transition: all 400ms ease-in-out;
+
+    .header-container {
+        height: 70px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        box-shadow: 0 1px  rgb(255, 255, 255);
+        transition: all 400ms ease-in-out;
+    }
+
+    .logo {
+        // margin-right: auto;
+        font-size: 30px;
+        font-weight: 600;
+        font-style: italic;
+        color: var(--light);
+        transition: all 400ms ease-in-out;
+    }
+}
+
+.subheader {
+    position: absolute;
+    top: 70px;
+    height: 40px;
+    width: 100%;
+
+    .container {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        background-color: white;
+        transition: all 400ms ease-in-out;
+
+        .list li {
+            display: inline-block;
+            padding: 0 20px;
+
+            a {
+                color: black;
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+
+.nav-list li {
+    display: inline-block;
+    padding: 0 15px;
+
+    a {
+        position: relative;
+        display: inline-block;
+        color: var(--light);
+        display: inline-block;
+        font-size: 14px;
+        transition: all 400ms ease-in-out;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -3px;
+            width: 100%;
+            height: 1px;
+            transform: scaleX(0);
+            transform-origin: left;
+            background-color: var(--light);
+            transition: transform .2s ease-in-out;
+        }
+
+        &:hover::after {
+            transform: scaleX(1);
+        }
+    }
+}
+
+
+.nav-list {
+    .nav-active {
+        opacity: .5;
+    }
+}
+
+.scrolling-active {
+    background-color: rgba(255, 255, 255, 0.75);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+
+    .header-container {
+        box-shadow: 0 1px  black;
+    }
+}
+
+
+.scrolling-active .nav-list li a {
+    color: var(--dark);
+}
+
+.scrolling-active .logo {
+    color: var(--dark);
+}
+
+.scrolling-active .nav-list a::after {
+    background-color: var(--dark);
+}
