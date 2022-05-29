@@ -6,14 +6,15 @@
 }
 
 .services-title {
-    /* padding-top: 50px; */
     padding-bottom: 50px;
     text-align: center;
 }
 
 .services-title h1 {
-    font-weight: 600;
-    font-size: 48px;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 500;
     color: var(--light);
 }
 
@@ -24,10 +25,11 @@
     text-align: center;
 }
 .services img {
-    height: 150px;
+    height: 100px;
 }
 
 .cases h1 {
+    font-size: 20px;
     color: var(--light);
     font-weight: 400;
 }

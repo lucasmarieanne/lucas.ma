@@ -3,8 +3,7 @@ header {
   width: 100%;
   padding: 0 5%;
   z-index: 1000;
-  -webkit-transition: all 400ms ease-in-out;
-  transition: all 400ms ease-in-out;
+  background-color: white;
 }
 
 header .header-container {
@@ -20,19 +19,72 @@ header .header-container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-shadow: 0 1px white;
-          box-shadow: 0 1px white;
+  -webkit-box-shadow: 0 1px black;
+          box-shadow: 0 1px black;
   -webkit-transition: all 400ms ease-in-out;
   transition: all 400ms ease-in-out;
 }
 
-header .logo {
+header .header-container .logo {
   font-size: 30px;
   font-weight: 600;
   font-style: italic;
-  color: var(--light);
+  color: var(--dark);
+}
+
+header .header-container .nav-list li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+header .header-container .nav-list li a {
+  position: relative;
+  display: inline-block;
+  color: var(--dark);
+  display: inline-block;
+  font-size: 14px;
   -webkit-transition: all 400ms ease-in-out;
   transition: all 400ms ease-in-out;
+}
+
+header .header-container .nav-list li a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  width: 100%;
+  height: 1px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  background-color: var(--dark);
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+
+header .header-container .nav-list li a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+header .header-container .header-btn {
+  font-size: 14px;
+  padding: 10px 20px;
+  border: 1px black solid;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+header .header-container .header-btn:hover {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.nav-list .nav-active {
+  opacity: .5;
 }
 
 .subheader {
@@ -56,8 +108,6 @@ header .logo {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: white;
-  -webkit-transition: all 400ms ease-in-out;
-  transition: all 400ms ease-in-out;
 }
 
 .subheader .container .list li {
@@ -66,72 +116,10 @@ header .logo {
 }
 
 .subheader .container .list li a {
-  color: black;
   font-size: 17px;
 }
 
-.nav-list li {
-  display: inline-block;
-  padding: 0 15px;
-}
-
-.nav-list li a {
-  position: relative;
-  display: inline-block;
-  color: var(--light);
-  display: inline-block;
-  font-size: 14px;
-  -webkit-transition: all 400ms ease-in-out;
-  transition: all 400ms ease-in-out;
-}
-
-.nav-list li a::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -3px;
-  width: 100%;
-  height: 1px;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  background-color: var(--light);
-  -webkit-transition: -webkit-transform .2s ease-in-out;
-  transition: -webkit-transform .2s ease-in-out;
-  transition: transform .2s ease-in-out;
-  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
-}
-
-.nav-list li a:hover::after {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
-
-.nav-list .nav-active {
-  opacity: .5;
-}
-
-.scrolling-active {
-  background-color: rgba(255, 255, 255, 0.75);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
-}
-
-.scrolling-active .header-container {
-  -webkit-box-shadow: 0 1px  black;
-          box-shadow: 0 1px  black;
-}
-
-.scrolling-active .nav-list li a {
-  color: var(--dark);
-}
-
-.scrolling-active .logo {
-  color: var(--dark);
-}
-
-.scrolling-active .nav-list a::after {
-  background-color: var(--dark);
+.subheader .container .list li a i {
+  color: black;
 }
 /*# sourceMappingURL=navabr.css.map */

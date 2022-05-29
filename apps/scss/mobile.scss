@@ -12,42 +12,12 @@
         transition: all 400ms ease-in-out;
 
         .header-container {
-            height: 50px;
             width: 100%;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             text-align: center;
             padding: 0 3%;
-        }
-    }
-
-    .subheader {
-        position: absolute;
-        top: 50px;
-        height: 40px;
-        width: 100%;
-        transition: all 400ms ease-in-out;
-    
-        .container {
-            height: 50px;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-            background-color: white;
-            transition: all 400ms ease-in-out;
-    
-            .list li {
-                display: inline-block;
-                padding: 0 20px;
-    
-                a {
-                    color: black;
-                    font-size: 17px;
-                }
-            }
         }
     }
 }
