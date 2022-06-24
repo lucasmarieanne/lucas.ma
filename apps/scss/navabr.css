@@ -21,8 +21,6 @@ header .header-container {
           justify-content: space-between;
   -webkit-box-shadow: 0 1px black;
           box-shadow: 0 1px black;
-  -webkit-transition: all 400ms ease-in-out;
-  transition: all 400ms ease-in-out;
 }
 
 header .header-container .logo {
@@ -34,7 +32,6 @@ header .header-container .logo {
 
 header .header-container .nav-list li {
   display: inline-block;
-  padding: 0 15px;
 }
 
 header .header-container .nav-list li a {
@@ -85,6 +82,11 @@ header .header-container .header-btn:hover {
 
 .nav-list .nav-active {
   opacity: .5;
+  margin-right: 15px;
+}
+
+.nav-list .nav-gray {
+  margin-right: 15px;
 }
 
 .subheader {

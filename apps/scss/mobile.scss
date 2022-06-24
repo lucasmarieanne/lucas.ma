@@ -1,7 +1,8 @@
 /* Navbar */
 
-@media screen and (max-width: 850px) {
-    .logo {
+@media screen and (max-width: 768px) {
+    .logo,
+    .header-btn {
         display: none;
     }
 
@@ -9,18 +10,51 @@
         position: fixed;
         width: 100%;
         z-index: 1000;
-        transition: all 400ms ease-in-out;
+        // transition: all 400ms ease-in-out;
+        padding: 0;
 
         .header-container {
             width: 100%;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 0 3%;
+            box-shadow: none;
+        }
+
+        nav {
+            width: 100%;
+        }
+
+        .nav-list {
+            display: flex;
+            width: 100%;
+
+            .nav-active {
+                opacity: 1;
+            }
+        }
+
+        .nav-list li {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+
+            a {
+                display: inline-block;
+                width: 100%; 
+                border-bottom: 3px black solid;
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
+            
+            .nav-gray {
+                border-bottom: 3px rgb(170, 170, 170) solid;
+            }
         }
     }
 }
+
 
 @media screen and (max-width: 400px) {
 

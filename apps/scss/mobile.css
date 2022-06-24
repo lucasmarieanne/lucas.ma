@@ -1,28 +1,56 @@
 /* Navbar */
-@media screen and (max-width: 850px) {
-  .logo {
+@media screen and (max-width: 768px) {
+  .logo,
+  .header-btn {
     display: none;
   }
   header {
     position: fixed;
     width: 100%;
     z-index: 1000;
-    -webkit-transition: all 400ms ease-in-out;
-    transition: all 400ms ease-in-out;
+    padding: 0;
   }
   header .header-container {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
-    padding: 0 3%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  header nav {
+    width: 100%;
+  }
+  header .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  header .nav-list .nav-active {
+    opacity: 1;
+  }
+  header .nav-list li {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  header .nav-list li a {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 3px black solid;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  header .nav-list li .nav-gray {
+    border-bottom: 3px #aaaaaa solid;
   }
 }
 
