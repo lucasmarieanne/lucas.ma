@@ -1,4 +1,15 @@
 /* Navbar */
+@media screen and (min-width: 2000px) {
+  body {
+    max-width: 2000px;
+    margin: 0 auto;
+  }
+  header,
+  .subheader {
+    max-width: 2000px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .logo,
   .header-btn {
